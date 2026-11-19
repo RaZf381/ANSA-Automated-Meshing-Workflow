@@ -1,6 +1,15 @@
 # ANSA Automated Meshing Workflow
 
-Python script that scripts ANSA's meshing API to batch-mesh a camshaft at three element sizes and export ANSYS CDB decks, instead of doing it by hand in the GUI three times.
+Python script that batch-meshes a camshaft in ANSA at 3, 5 and 7 mm and exports ANSYS CDB decks.
+
+![demo](docs/demo.gif)
+
+```bash
+git clone https://github.com/shanthoshkv/ANSA-Automated-Meshing-Workflow
+```
+
+Running the script needs ANSA (BETA CAE Systems, commercial, licensed). Cloning gets you the script, the input STEP file, and the example outputs. See [Installation / Usage](#installation--usage).
+
 
 <img src="Report/images/cadmodel1.jpg" alt="Camshaft CAD model, two lobes on a shaft" width="480">
 

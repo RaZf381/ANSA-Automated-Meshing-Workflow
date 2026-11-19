@@ -1,0 +1,12 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Byte-compile the ANSA script
+        run: python3 -m py_compile "Required Files/export_working_long_code.py"
